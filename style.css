@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+  box-sizing: border-box;
+  font-weight: 300;
+  transition: 0.5s;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  width: 1000px;
+  height: 600px;
+  margin: 50px;
+  background-color: #dddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  width: 300px;
+  height: 500px;
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.img {
+  height: 35%;
+  width: inherit;
+  background: url(./images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.middle {
+  height: 65%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text {
+  text-align: center;
+}
+.player1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9afd9;
+  background-image: linear-gradient(270deg, #d9afd9 0%, #97d9e1 100%);
+  padding: 0px 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.player img {
+  width: 35px;
+  margin-right: 5px;
+}
+.musictext p {
+  margin: 5px;
+  font-size: 14px;
+}
+button {
+  width: 100%;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: rgb(7, 53, 190);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 300;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+   0px 0px 20px 5px rgba(55, 41, 255, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 20px 5px rgba(55, 41, 255, 0);
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(85, 48, 185);
+}
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.change {
+  text-decoration: underline;
+  color: rgb(7, 53, 190);
+}
+.change:hover,
+.finish:hover {
+  color: rgb(78, 43, 173);
+  text-decoration: none;
+  font-weight: bold;
+}
+.finish {
+  margin: 0px;
+}
+
+@media (max-width: 450px) {
+  header {
+    margin: 0px;
+  }
+}
+@media (max-width: 350px) {
+  .card {
+    width: 250px;
+    height: 450px;
+  }
+}
